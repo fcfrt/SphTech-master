@@ -1,0 +1,139 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/aa9e18d12c5afb35dcd731ed91706877/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.2.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/c4c8bb3938adedf41fcbce93dc8c2c77/jetified-core-ktx-1.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/f2ba21a9638e5fd2269785d55a9b0d33/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/b5d39c5912b6a4426597ef319d53c89e/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/4c2bcbc5d73f9606cbdeace02734127d/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/a3fba8e35fcf2e539a091f5247dd4330/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/8b8d029c1f3271eac3c950dc701456cc/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/6a3f75f560a45349452bf395d4d1bdfb/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/aad3d2a2977fc7caba81731c92ed8879/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/ae6b3123e24419355b3ea749c5dee336/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/56233828eb86ee156bdfc6be646a69c2/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/f4571e40b4d4a10d119d960d1f04dcbc/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/12c1e856d818e01297aeb52978a31b56/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.2.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/4b9870924e6a59106ae571b6074fa673/core-1.2.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/e5bdbb0145f8c3080c51d0fe324229ee/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/fbbe87855b96ee2b49433f7e565d0150/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/987fdee0016d4511de5ca8d142b7d255/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/805063c8041b63293340b96c5955acf8/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/43ceda03c54fe42d9fe3b79e7c939d21/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/0c780ff624e5fe74522576d2fdc69449/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/fb992a7353d54c70f242c298dd4630aa/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/f0ac17ac0e624c29cbe1664690de1594/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:3:5-36
+		INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/f2ba21a9638e5fd2269785d55a9b0d33/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/f2ba21a9638e5fd2269785d55a9b0d33/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.2.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/4b9870924e6a59106ae571b6074fa673/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/4b9870924e6a59106ae571b6074fa673/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/e5bdbb0145f8c3080c51d0fe324229ee/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/e5bdbb0145f8c3080c51d0fe324229ee/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.2.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/4b9870924e6a59106ae571b6074fa673/core-1.2.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.alanpaine.sphtech.MainActivity
+ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/aa9e18d12c5afb35dcd731ed91706877/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/aa9e18d12c5afb35dcd731ed91706877/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.2.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/c4c8bb3938adedf41fcbce93dc8c2c77/jetified-core-ktx-1.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.2.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/c4c8bb3938adedf41fcbce93dc8c2c77/jetified-core-ktx-1.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/f2ba21a9638e5fd2269785d55a9b0d33/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/f2ba21a9638e5fd2269785d55a9b0d33/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/b5d39c5912b6a4426597ef319d53c89e/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/b5d39c5912b6a4426597ef319d53c89e/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/4c2bcbc5d73f9606cbdeace02734127d/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/4c2bcbc5d73f9606cbdeace02734127d/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/a3fba8e35fcf2e539a091f5247dd4330/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/a3fba8e35fcf2e539a091f5247dd4330/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/8b8d029c1f3271eac3c950dc701456cc/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/8b8d029c1f3271eac3c950dc701456cc/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/6a3f75f560a45349452bf395d4d1bdfb/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/6a3f75f560a45349452bf395d4d1bdfb/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/aad3d2a2977fc7caba81731c92ed8879/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/aad3d2a2977fc7caba81731c92ed8879/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/ae6b3123e24419355b3ea749c5dee336/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/ae6b3123e24419355b3ea749c5dee336/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/56233828eb86ee156bdfc6be646a69c2/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/56233828eb86ee156bdfc6be646a69c2/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/f4571e40b4d4a10d119d960d1f04dcbc/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/f4571e40b4d4a10d119d960d1f04dcbc/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/12c1e856d818e01297aeb52978a31b56/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/12c1e856d818e01297aeb52978a31b56/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/4b9870924e6a59106ae571b6074fa673/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/4b9870924e6a59106ae571b6074fa673/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/e5bdbb0145f8c3080c51d0fe324229ee/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/e5bdbb0145f8c3080c51d0fe324229ee/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/fbbe87855b96ee2b49433f7e565d0150/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/fbbe87855b96ee2b49433f7e565d0150/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/987fdee0016d4511de5ca8d142b7d255/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/987fdee0016d4511de5ca8d142b7d255/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/805063c8041b63293340b96c5955acf8/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/805063c8041b63293340b96c5955acf8/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/43ceda03c54fe42d9fe3b79e7c939d21/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/43ceda03c54fe42d9fe3b79e7c939d21/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/0c780ff624e5fe74522576d2fdc69449/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/0c780ff624e5fe74522576d2fdc69449/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/fb992a7353d54c70f242c298dd4630aa/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/fb992a7353d54c70f242c298dd4630aa/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/f0ac17ac0e624c29cbe1664690de1594/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/alanpaine/.gradle/caches/transforms-2/files-2.1/f0ac17ac0e624c29cbe1664690de1594/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/app/src/main/AndroidManifest.xml
