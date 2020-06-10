@@ -1,4 +1,0 @@
-#Wed Jun 10 19:42:10 CST 2020
-base.0=/Users/alanpaine/Developer/SoundCode/Android/demo/SphTech-master/gradle-build/app/intermediates/dex/debug/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

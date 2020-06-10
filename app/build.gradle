@@ -62,8 +62,9 @@ dependencies {
     implementation rootProject.ext.androidx["androidx-appcompat"]
     implementation rootProject.ext.androidx["androidx.core"]
     implementation rootProject.ext.androidx["androidx.constraintlayout"]
-
     testImplementation rootProject.ext.androidx["junit"]
     androidTestImplementation rootProject.ext.androidx["androidx.test.ext-junit"]
     androidTestImplementation rootProject.ext.androidx["androidx.test.espresso:espresso-core"]
+    //引入基础库
+    implementation project(path: ':module:library-base')
 }

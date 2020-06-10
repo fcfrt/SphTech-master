@@ -1,2 +1,3 @@
 rootProject.name='SphTech-master'
 include ':app'
+include ':module:library-base'
