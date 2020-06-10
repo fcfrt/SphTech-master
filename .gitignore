@@ -9,9 +9,8 @@
 /.idea/assetWizardSettings.xml
 .DS_Store
 /build
+/gradle-build
+.gradle-build
 /captures
 .externalNativeBuild
 .cxx
-
-# Project exclude paths
-/gradle-build/app/intermediates/javac/debug/classes/
