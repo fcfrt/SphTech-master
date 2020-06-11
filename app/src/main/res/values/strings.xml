@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SphTech-master</string>
+
+    <string name="network_error">No network is currently available, please check your network Settings</string>
+    <string name="notify_no_network">The connection is not available, please try again later!</string>
+    <string name="time_out_please_try_again_later">Connection timeout, please try again later!</string>
+    <string name="esky_service_exception">The network is not working, please try again later!</string>
 </resources>

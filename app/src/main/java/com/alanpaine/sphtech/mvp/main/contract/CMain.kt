@@ -1,7 +1,9 @@
-package com.alanpaine.sphtech.mvp.contract
+package com.alanpaine.sphtech.mvp.main.contract
 
 import com.alanpaine.baselib.base.IFcfrtBasePresenter
 import com.alanpaine.baselib.base.IFcfrtBaseView
+import com.alanpaine.sphtech.bean.ModeData
+import com.alanpaine.sphtech.bean.RecordsData
 
 
 /**
@@ -16,10 +18,13 @@ import com.alanpaine.baselib.base.IFcfrtBaseView
 interface CMain {
 
     interface IPMain : IFcfrtBasePresenter {
-
+        fun datastoreSearch(resource_id:String)
     }
 
     interface IVMain : IFcfrtBaseView {
-
+        fun showLoading()
+        fun hideLoading()
+        fun onSuccess(data: List<RecordsData>)
+        fun onFailure(msg:String)
     }
 }

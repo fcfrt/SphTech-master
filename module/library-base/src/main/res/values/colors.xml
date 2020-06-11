@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="base_transparent" >#00000000</color>
+    <color name="base_white5">#0cFFFFFF</color>
+    <color name="base_white10">#22FFFFFF</color>
+    <color name="base_white20">#33FFFFFF</color>
+    <color name="base_white30">#44FFFFFF</color>
+    <color name="base_white40">#66FFFFFF</color>
+    <color name="base_white50">#88FFFFFF</color>
+    <color name="base_white60">#99FFFFFF</color>
+    <color name="base_white70">#BBFFFFFF</color>
+    <color name="base_white80">#CCFFFFFF</color>
+    <color name="base_white90">#EEFFFFFF</color>
+    <color name="base_white">#FFFFFFFF</color>
+
+    <!-- 黑色 -->
+    <color name="base_black">#FF000000</color>
+    <color name="base_black95">#F2000000</color>
+    <color name="base_black90">#E6000000</color>
+    <color name="base_black85">#D9000000</color>
+    <color name="base_black80">#CC000000</color>
+    <color name="base_black75">#B000000F</color>
+    <color name="base_black70">#B3000000</color>
+    <color name="base_black65">#A6000000</color>
+    <color name="base_black60">#99000000</color>
+    <color name="base_black55">#8C000000</color>
+    <color name="base_black50">#80000000</color>
+    <color name="base_black45">#73000000</color>
+    <color name="base_black40">#66000000</color>
+    <color name="base_black35">#59000000</color>
+    <color name="base_black30">#4D000000</color>
+    <color name="base_black25">#40000000</color>
+    <color name="base_black20">#33000000</color>
+    <color name="base_black15">#26000000</color>
+    <color name="base_black10">#1A000000</color>
+    <color name="base_black5">#0D000000</color>
+
+    <!-- 灰色 -->
+    <color name="base_gray">#808080</color>
+    <color name="base_gray_bg">#f2f2f2</color>
+    <!-- 红色 -->
+    <color name="base_red">#FF0000</color>
+    <!-- 金色 -->
+    <color name="base_gold">#FFD700</color>
+    <!-- 黄色 -->
+    <color name="base_yellow">#FFFF00</color>
+    <!-- 绿色 -->
+    <color name="base_green">#008000</color>
+    <!-- 蓝色 -->
+    <color name="base_blue">#0000FF</color>
+    <!-- 紫色 -->
+    <color name="base_purple">#800080</color>
+    <!-- 粉色 -->
+    <color name="base_pink">#FFC0CB</color>
+    <!-- 橙色 -->
+    <color name="base_orange">#FFA500</color>
+
+    <color name="base_bar_pressed_black20">#22000000</color>
+    <color name="base_bar_pressed_black5">#0c000000</color>
+    <color name="base_bar_pressed_white40">#66FFFFFF</color>
+    <color name="base_bar_transparent">#00000000</color>
+
+    <color name="main_color" tools:ignore="ResourceName">#2898FA</color>
+
+    <!-- 所有的分割线颜色 -->
+    <color name="base_gray_diver">#207F7F7F</color>
+
+    <!-- 字体颜色（黑色） -->
+    <color name="base_text_black">#3A3A3A</color>
+    <color name="base_text_default_color">#ff777777</color>
+
+    <color name="base_text_white">#F5F5F5</color>
+
+</resources>

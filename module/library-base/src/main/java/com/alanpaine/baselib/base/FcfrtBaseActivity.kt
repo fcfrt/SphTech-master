@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.ViewTreeObserver
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import com.alanpaine.baselib.utils.FcfrtToast
 import com.gyf.immersionbar.ImmersionBar
 
 
@@ -91,6 +92,12 @@ abstract class FcfrtBaseActivity<T: FcfrtBasePresenter<*, *>>: AppCompatActivity
         return true
     }
 
+    open fun showToast(msg:String){
+        FcfrtToast.show(msg)
+    }
+    open fun showToast(msg:Int){
+        FcfrtToast.show(msg)
+    }
 
 
     override fun onDestroy() {

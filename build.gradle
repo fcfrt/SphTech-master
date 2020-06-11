@@ -20,6 +20,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
     }
     buildDir = new File(rootDir, "gradle-build/${path.replaceAll(':', '/')}")//设置项目生成的build文件进行统一管理
 }

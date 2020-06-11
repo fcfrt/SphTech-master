@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 def keystorePropertiesFile = rootProject.file("./keystore/keystore.properties")
 // Initialize a new Properties() object called keystoreProperties.
@@ -41,6 +42,10 @@ android {
             }
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     buildTypes {
         debug {
             minifyEnabled false
@@ -62,9 +67,22 @@ dependencies {
     implementation rootProject.ext.androidx["androidx-appcompat"]
     implementation rootProject.ext.androidx["androidx.core"]
     implementation rootProject.ext.androidx["androidx.constraintlayout"]
+    implementation rootProject.ext.androidx["androidx.cardview"]
+    implementation rootProject.ext.androidx["androidx.recyclerview"]
     testImplementation rootProject.ext.androidx["junit"]
     androidTestImplementation rootProject.ext.androidx["androidx.test.ext-junit"]
     androidTestImplementation rootProject.ext.androidx["androidx.test.espresso:espresso-core"]
+
+    implementation rootProject.ext.dependencies["okhttp3"] //此版本最低要求 API 9
+    implementation (rootProject.ext.dependencies["rxhttp"]){
+        exclude group: "com.squareup.okhttp3"
+    }
+    //注解处理器，生成RxHttp类
+    kapt rootProject.ext.dependencies["rxhttp-compiler"]
+    //litepal数据库工具
+    implementation rootProject.ext.dependencies["litepal"]
+    //适配器
+    implementation rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
     //引入基础库
     implementation project(path: ':module:library-base')
 }
