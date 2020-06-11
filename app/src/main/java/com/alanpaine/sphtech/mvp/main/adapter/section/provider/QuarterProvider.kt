@@ -9,15 +9,15 @@ import com.chad.library.adapter.base.entity.node.BaseNode
 import com.chad.library.adapter.base.provider.BaseNodeProvider
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
 
-class SecondNodeProvider : BaseNodeProvider(){
+class QuarterProvider : BaseNodeProvider(){
     override val itemViewType: Int
         get() = 1
     override val layoutId: Int
-        get() = R.layout.item_main_yearly
+        get() = R.layout.item_main_quarter
 
     override fun convert(helper: BaseViewHolder, data: BaseNode) {
         val entity = data as ItemNode
-        helper.setText(R.id.tv_year,"Year: ${entity.quarter}")
+        helper.setText(R.id.tv_quarter,"Quarter: ${entity.quarter}")
         helper.setText(R.id.tv_volume,"Volume: ${entity.volume_of_mobile_data}")
         helper.getView<ImageView>(R.id.iv_down).visibility = if (entity.isDecreased){View.GONE}else{View.VISIBLE}
     }

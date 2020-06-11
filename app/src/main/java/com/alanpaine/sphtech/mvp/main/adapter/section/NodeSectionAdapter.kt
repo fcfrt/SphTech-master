@@ -3,7 +3,7 @@ package com.alanpaine.sphtech.mvp.main.adapter.section
 import com.alanpaine.sphtech.bean.section.ItemNode
 import com.alanpaine.sphtech.bean.section.RootNode
 import com.alanpaine.sphtech.mvp.main.adapter.section.provider.RootNodeProvider
-import com.alanpaine.sphtech.mvp.main.adapter.section.provider.SecondNodeProvider
+import com.alanpaine.sphtech.mvp.main.adapter.section.provider.QuarterProvider
 import com.chad.library.adapter.base.BaseNodeAdapter
 import com.chad.library.adapter.base.entity.node.BaseNode
 
@@ -23,6 +23,6 @@ class NodeSectionAdapter : BaseNodeAdapter() {
 
     init {
         addFullSpanNodeProvider(RootNodeProvider())
-        addNodeProvider(SecondNodeProvider())
+        addNodeProvider(QuarterProvider())
     }
 }

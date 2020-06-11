@@ -13,7 +13,7 @@
         android:layout_margin="@dimen/space_32">
 
         <TextView
-            android:id="@+id/tv_year"
+            android:id="@+id/tv_quarter"
             style="@style/w_weight_h_wrap"
             android:textSize="@dimen/font_size_32px"
             android:textColor="@color/main_color"
@@ -30,13 +30,13 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/iv_down"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_year"
+            app:layout_constraintTop_toBottomOf="@+id/tv_quarter"
             tools:text="Volume: 1.99" />
 
         <ImageView
             android:id="@+id/iv_down"
-            android:layout_width="@dimen/space_80"
-            android:layout_height="@dimen/space_80"
+            android:layout_width="@dimen/space_70"
+            android:layout_height="@dimen/space_70"
             android:src="@drawable/ic_trending_down"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -19,7 +19,7 @@ class RootNodeProvider : BaseNodeProvider(){
     override fun convert(helper: BaseViewHolder, data: BaseNode) {
         val entity = data as RootNode
         helper.setText(R.id.tv_year,"${entity.title}年度")
-        helper.setText(R.id.tv_volume,"YearVolume: ${entity.yearVolume}")
+        helper.setText(R.id.tv_volume,"TotalVolume: ${entity.yearVolume}")
         helper.setText(R.id.tv_more,if (entity.isExpanded){"收起 >"}else{"展开 >"})
         //helper.getView<ImageView>(R.id.iv_down).visibility = if (entity.isDecreased){View.GONE}else{View.VISIBLE}
         setViewdrawableLeft(helper.getView(R.id.tv_more),entity.isDecreased)
