@@ -1,43 +1,58 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="60dip"
+    android:layout_height="@dimen/space_120"
     android:layout_gravity="center"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
+    android:layout_marginLeft="@dimen/space_10"
+    android:layout_marginRight="@dimen/space_10"
     android:foreground="?android:attr/selectableItemBackground"
-    card_view:cardBackgroundColor="@android:color/white"
-    card_view:cardCornerRadius="4dp"
-    card_view:cardElevation="2dp"
-    card_view:cardUseCompatPadding="true">
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/space_8"
+    app:cardElevation="@dimen/space_4"
+    app:cardUseCompatPadding="true">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/w_match_h_match"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_header"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="left|center"
-            android:paddingLeft="10dp"
-            android:textColor="@color/base_black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/w_wrap_h_match"
+            android:padding="@dimen/space_18"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_year"
+                style="@style/w_weight_h_wrap"
+                android:textSize="@dimen/font_size_32px"
+                android:textColor="@color/base_black"
+                app:layout_constraintEnd_toStartOf="@+id/iv_down"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="2020" />
+
+            <TextView
+                android:id="@+id/tv_volume"
+                style="@style/w_weight_h_wrap"
+                android:textSize="@dimen/font_size_32px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/iv_down"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_year"
+                android:text="YearVolume: 1.99" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/tv_more"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/w_wrap_h_match"
+            android:layout_weight="0"
             android:gravity="right|center"
-            android:paddingRight="10dp"
-            android:text="详情 >"
+            android:paddingRight="@dimen/space_20"
+            android:text="展开 >"
+            android:drawableLeft="@drawable/ic_trending_down"
             android:textColor="@color/main_color"
-            android:textSize="18sp" />
+            android:textSize="@dimen/font_size_36px"
+            android:paddingEnd="@dimen/space_20" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

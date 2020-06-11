@@ -12,7 +12,6 @@ import com.alanpaine.sphtech.mvp.main.model.MMainImpl
 import com.chad.library.adapter.base.entity.node.BaseNode
 import org.litepal.LitePal
 import java.util.*
-import kotlin.collections.HashMap
 
 /**
  * 项目名称：
@@ -54,27 +53,44 @@ class PMainImpl(mContext: Context, mView: CMain.IVMain) :
             }).toString()
     }
 
-
-    fun getEntity(data: List<RecordsData>): List<BaseNode>? {
+    /**
+     * 根据返回对数据进行分组分类
+     */
+    fun getGroupEntity(data: List<RecordsData>): List<BaseNode>? {
         val list: MutableList<BaseNode> = ArrayList()
         val byLength = data.groupBy { it.quarter?.split("-")?.get(0) }
         byLength.forEach {
             var items: MutableList<BaseNode> = ArrayList()
-            var yearVolume=0F
+            var yearVolume = 0F
+            var quarterVolume = 0f
+            var isDecreased: Boolean
+            var isAllDecreased = true
             if (it.key?.toInt() in 2008..2018) {
-                it.value.forEach {its->
+                it.value.forEach { its ->
+                    if (quarterVolume > its.volume_of_mobile_data?.toFloat() ?: 0F) {
+                        isDecreased = false
+                        isAllDecreased = false
+                    } else {
+                        isDecreased = true
+                    }
+                    quarterVolume = its.volume_of_mobile_data?.toFloat() ?: 0F
+                    yearVolume += its.volume_of_mobile_data?.toFloat() ?: 0F
                     val itemEntity = ItemNode()
                     itemEntity._id = its._id
                     itemEntity.quarter = its.quarter
+                    itemEntity.isDecreased = isDecreased
                     itemEntity.volume_of_mobile_data = its.volume_of_mobile_data
                     items.add(itemEntity)
-                    yearVolume += its.volume_of_mobile_data?.toFloat() ?: 0F
-
                 }
                 // Root Node
                 val entity = RootNode()
                 entity.title = "${it.key}"
+                entity.isDecreased = isAllDecreased
+                entity.yearVolume = yearVolume
+                entity.quarterVolume = quarterVolume
                 entity.childNode = items
+                //根据下降数据来控制展开与不展开
+                entity.isExpanded = !isAllDecreased
                 list.add(entity)
             }
         }

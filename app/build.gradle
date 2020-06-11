@@ -83,6 +83,8 @@ dependencies {
     implementation rootProject.ext.dependencies["litepal"]
     //适配器
     implementation rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
+    //下拉刷新上拉加载库
+    implementation rootProject.ext.dependencies["swiperefreshlayout"]
     //引入基础库
     implementation project(path: ':module:library-base')
 }
