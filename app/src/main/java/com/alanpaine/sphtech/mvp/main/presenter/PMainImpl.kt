@@ -12,6 +12,7 @@ import com.alanpaine.sphtech.mvp.main.model.MMainImpl
 import com.chad.library.adapter.base.entity.node.BaseNode
 import org.litepal.LitePal
 import java.util.*
+import kotlin.collections.HashMap
 
 /**
  * 项目名称：
@@ -23,7 +24,8 @@ import java.util.*
  * 修改简介：
  */
 class PMainImpl(mContext: Context, mView: CMain.IVMain) :
-    FcfrtBasePresenter<CMain.IVMain, MMainImpl>(mContext, mView,
+    FcfrtBasePresenter<CMain.IVMain, MMainImpl>(
+        mContext, mView,
         MMainImpl()
     ),
     CMain.IPMain {
@@ -32,47 +34,50 @@ class PMainImpl(mContext: Context, mView: CMain.IVMain) :
      */
     override fun datastoreSearch(resource_id: String) {
         mModel!!.datastoreSearch(resource_id)
-             .doOnSubscribe { mView?.showLoading() }
-             .doFinally { mView?.hideLoading() }
-             .subscribe({ data ->
-                 data.records?.let {
-                     mView?.onSuccess(it)
-                     //保存数据，辅助离线状态时有数据展示
-                     FcfrtDataHelper.saveRecordsListData(it)
-                 }
-             }, {
-                 val error = ErrorInfo(it)
-                 LitePal.findAllAsync(RecordsData::class.java).listen { data ->
-                     if(data.isNotEmpty()){
-                         mView?.onSuccess(data)
-                     }else{
-                         mView?.onFailure(error.errorMsg.toString())
-                     }
-                 }
-             }).toString()
+            .doOnSubscribe { mView?.showLoading() }
+            .doFinally { mView?.hideLoading() }
+            .subscribe({ data ->
+                data.records?.let {
+                    mView?.onSuccess(it)
+                    //保存数据，辅助离线状态时有数据展示
+                    FcfrtDataHelper.saveRecordsListData(it)
+                }
+            }, {
+                val error = ErrorInfo(it)
+                LitePal.findAllAsync(RecordsData::class.java).listen { data ->
+                    if (data.isNotEmpty()) {
+                        mView?.onSuccess(data)
+                    } else {
+                        mView?.onFailure(error.errorMsg.toString())
+                    }
+                }
+            }).toString()
     }
 
 
-     fun getEntity(data: List<RecordsData>): List<BaseNode>? {
+    fun getEntity(data: List<RecordsData>): List<BaseNode>? {
         val list: MutableList<BaseNode> = ArrayList()
-        for (records in data){
-            if (records.quarter!=null) {
-                var items: MutableList<BaseNode> = ArrayList()
-                val year: Int = records.quarter?.substring(0,4)?.toInt()?:0
-                if (year in 2008..2018){
+        val byLength = data.groupBy { it.quarter?.split("-")?.get(0) }
+        byLength.forEach {
+            var items: MutableList<BaseNode> = ArrayList()
+            var yearVolume=0F
+            if (it.key?.toInt() in 2008..2018) {
+                it.value.forEach {its->
                     val itemEntity = ItemNode()
-                    itemEntity._id = records._id
-                    itemEntity.quarter = records.quarter
-                    itemEntity.volume_of_mobile_data = records.volume_of_mobile_data
-                    itemEntity.year = year
+                    itemEntity._id = its._id
+                    itemEntity.quarter = its.quarter
+                    itemEntity.volume_of_mobile_data = its.volume_of_mobile_data
                     items.add(itemEntity)
-                    // Root Node
-                    val entity = RootNode(items, "$year")
-                    list.add(entity)
+                    yearVolume += its.volume_of_mobile_data?.toFloat() ?: 0F
+
                 }
+                // Root Node
+                val entity = RootNode()
+                entity.title = "${it.key}"
+                entity.childNode = items
+                list.add(entity)
             }
         }
-
         return list
     }
 

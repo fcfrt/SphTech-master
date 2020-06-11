@@ -45,6 +45,8 @@ open class DataPareser<T> : AbstractParser<T> {
         return data
     }
 
+
+
     companion object {
         @JvmStatic
         operator fun <T> get(type: Class<T>): DataPareser<T> {
