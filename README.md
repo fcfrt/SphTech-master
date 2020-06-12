@@ -6,6 +6,9 @@
 - The application can display the amount of online and offline data sent by Singapore mobile network from 2008 to 2019. If the amount of data drops in any quarter of the year, a clickable image is displayed in the entry, and a drop data prompt box is displayed after clicking;
 - Supports local caching of data
 
+## Application Download
+[Download](http://d.firim.info/sphtech)
+
 ## Functionality and dependency libraries
 
 1. [`litepal`](https://github.com/LitePalFramework/LitePal)
