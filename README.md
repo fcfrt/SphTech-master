@@ -3,7 +3,7 @@
 ## Application description
 
 - The App starts from[https://data.gov.sg/dataset/mobile-data-usage](https://data.gov.sg/api/action/datastore_search?resource_id=a807b7ab-6cad-4aa6-87d0-e283a7353a0f&limit=5) Obtain data and display the list according to 4 quarters in a year;
-- The application can display the amount of online and offline data sent by Singapore mobile network from 2008 to 2019. If the amount of data drops in any quarter of the year, a clickable image is displayed in the entry, and a drop data prompt box is displayed after clicking;
+- The application can display the amount of online and offline data sent by Singapore mobile network from 2008 to 2018. If the amount of data drops in any quarter of the year, a clickable image is displayed in the entry, and a drop data prompt box is displayed after clicking;
 - Supports local caching of data
 
 ## Application Download
