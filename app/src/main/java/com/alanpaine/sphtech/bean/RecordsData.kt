@@ -17,4 +17,6 @@ class RecordsData: LitePalSupport(), Serializable {
     var _id:Int=0
     var volume_of_mobile_data: String? = null//数据
     var quarter: String? = null//时间
+
+
 }

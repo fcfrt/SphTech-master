@@ -43,13 +43,13 @@ class PMainImpl(mContext: Context, mView: CMain.IVMain) :
                 }
             }, {
                 val error = ErrorInfo(it)
-                LitePal.findAllAsync(RecordsData::class.java).listen { data ->
+                FcfrtDataHelper.getData(callBack = {data->
                     if (data.isNotEmpty()) {
                         mView?.onSuccess(data)
                     } else {
                         mView?.onFailure(error.errorMsg.toString())
                     }
-                }
+                })
             }).toString()
     }
 

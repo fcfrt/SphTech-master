@@ -25,10 +25,10 @@
   - [x] displays list data
   - [x] displays clickable images
   - [x] Data cache to display offline data without a network
-- [ ] Test
-  - [ ] Core logic code unit tests. Ps: Each framework has a corresponding unit test case, so third-party libraries ignore tests
-  - [ ] UI is compatibility testing
-  - [ ] New module unit test case (network error, server internal error)
-  - [ ] Aging test
+- [x] Testing
+  - [x] Core logic code unit tests. Ps: Each framework has a corresponding unit test case, so third-party libraries ignore tests
+  - [x] UI is compatibility testing
+  - [x] Testing (network error, server internal error)
+  - [x] Unstructured data processing, data grouping testing
 ## 
 * **Email**: <AlanPaine@163.com>  
