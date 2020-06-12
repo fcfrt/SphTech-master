@@ -85,6 +85,7 @@ dependencies {
     implementation rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
     //下拉刷新上拉加载库
     implementation rootProject.ext.dependencies["swiperefreshlayout"]
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
     //引入基础库
     implementation project(path: ':module:library-base')
 }

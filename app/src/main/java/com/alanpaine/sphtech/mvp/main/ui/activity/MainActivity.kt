@@ -68,7 +68,6 @@ class MainActivity : FcfrtBaseActivity<PMainImpl>(), CMain.IVMain {
         runOnUiThread {
             nodeAdapter?.setList(mPresenter?.getGroupEntity(data))
         }
-
         //showToast("数据：${data.size}")
     }
 
