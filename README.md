@@ -34,7 +34,7 @@
   - [x] Testing (network error, server internal error)
   - [x] Unstructured data processing, data grouping testing
 ## 
-##About the keyStore upload reason
+## About the keyStore upload reason
 Since the project is configured to generate apK quickly, JKS is uploaded to facilitate the demonstration. Normally, the keystore in the project will prohibit uploading operation
 
 * **Email**: <AlanPaine@163.com>  
