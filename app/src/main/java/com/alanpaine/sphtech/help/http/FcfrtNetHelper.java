@@ -13,10 +13,9 @@ import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
 
 public class FcfrtNetHelper {
+
 	  public static boolean IsHaveInternet(final Context context) {
-
 	        try {
-
 	            ConnectivityManager manger =(ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
 	            if (manger==null) {
 					return false;

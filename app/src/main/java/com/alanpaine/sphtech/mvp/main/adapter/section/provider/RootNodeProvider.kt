@@ -2,7 +2,6 @@ package com.alanpaine.sphtech.mvp.main.adapter.section.provider
 
 import android.graphics.drawable.Drawable
 import android.view.View
-import android.widget.ImageView
 import android.widget.TextView
 import com.alanpaine.sphtech.R
 import com.alanpaine.sphtech.bean.section.RootNode
@@ -25,7 +24,7 @@ class RootNodeProvider : BaseNodeProvider(){
         setViewdrawableLeft(helper.getView(R.id.tv_more),entity.isDecreased)
     }
     /**
-     * 设置按钮顶部图片
+     * 设置按钮左部图片
      *
      * @param view
      * @param resid
