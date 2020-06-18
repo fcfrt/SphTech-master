@@ -1,15 +1,10 @@
 package com.alanpaine.sphtech.mvp.main.presenter
 import com.alanpaine.sphtech.bean.ModeData
-import com.alanpaine.sphtech.bean.RecordsData
-import com.alanpaine.sphtech.bean.section.ItemNode
-import com.alanpaine.sphtech.bean.section.RootNode
 import com.alanpaine.sphtech.help.FcfrtDataHelper
 import com.alanpaine.sphtech.help.http.ErrorInfo
 import com.alanpaine.sphtech.utils.ApiUrl
-import com.chad.library.adapter.base.entity.node.BaseNode
 import org.junit.Before
 import org.junit.Test
-import org.litepal.LitePal
 import rxhttp.wrapper.param.RxHttp
 import rxhttp.wrapper.utils.GsonUtil
 import java.util.*
@@ -23,26 +18,28 @@ class PMainImplTest {
 
     @Test
     fun datastoreSearch() {
+        log("┌─── test datastoreSearch ───────────────────────────────────────")
         val map = TreeMap<String, String>()
         map["resource_id"] = "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"//资源id
         RxHttp.get(ApiUrl.DATASTORE_SEARCH)
             .addAll(map)
             .subscribeOnCurrent()
             .asDataParser(ModeData::class.java)
-            .doOnSubscribe {    log("┌─── datastoreSearch  => 开始 ────────────────────────────────") }
-            .doFinally { log("└─── datastoreSearch  => 结束 ────────────────────────────────") }
+            .doOnSubscribe {    log("|\t┌─── datastoreSearch  => 开始 ────────────────────────────────") }
+            .doFinally { log("|\t└─── datastoreSearch  => 结束 ────────────────────────────────") }
             .subscribe({ data ->
                 data.records?.let {
-                    log("|\t┌─── datastoreSearch  服务器数据=> ${GsonUtil.toJson(it)} ────────────────────────────────")
+                    log("|\t-─── datastoreSearch  服务器数据=> ${GsonUtil.toJson(it)} ────────────────────────────────")
                 }
             }, {//失败就获取离线数据
                 val error = ErrorInfo(it)
-                log("|\t┌─── datastoreSearch  失败=> ${error.errorMsg}  ────────────────────────────────")
+                log("|\t-─── datastoreSearch  请求失败=> ${error.errorMsg}  ────────────────────────────────")
                 FcfrtDataHelper.getData(callBack = {
-                    log("|\t└─── getGroupEntity  离线数据=> ${GsonUtil.toJson(it)} ────────────────────────────────")
+                    log("|\t-─── getGroupEntity  离线数据=> ${GsonUtil.toJson(it)} ────────────────────────────────")
                 })
 
             }).toString()
+        log("└──────────────────────────────────────────────────────────────")
     }
 
     /**
@@ -51,32 +48,35 @@ class PMainImplTest {
      */
     @Test
     fun getGroupEntity() {
+        log("┌─── test getGroupEntity ───────────────────────────────────────")
         val map = TreeMap<String, String>()
         map["resource_id"] = "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"//资源id
         RxHttp.get(ApiUrl.DATASTORE_SEARCH)
             .addAll(map)
             .subscribeOnCurrent()
             .asDataParser(ModeData::class.java)
-            .doOnSubscribe {    log("┌─── getGroupEntity  => 开始 ────────────────────────────────") }
-            .doFinally { log("└─── getGroupEntity  => 结束 ────────────────────────────────") }
+            .doOnSubscribe {    log("|\t┌─── getGroupEntity  => 开始 ────────────────────────────────") }
+            .doFinally { log("|\t└─── getGroupEntity  => 结束 ────────────────────────────────") }
             .subscribe({ data ->
                 data.records?.let {
-                    log("|\t┌─── getGroupEntity  服务器数据=> ${GsonUtil.toJson(it)} ────────────────────────────────")
+                    log("|\t-─── getGroupEntity  服务器数据=> ${GsonUtil.toJson(it)} ────────────────────────────────")
                     val byLength = it.groupBy { it.quarter?.split("-")?.get(0) }
-                    log("|\t┌─── getGroupEntity  分组数据=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
+                    log("|\t-─── getGroupEntity  分组数据=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
                 }
             }, {//失败就获取离线数据
                 val error = ErrorInfo(it)
-                log("|\t┌─── getGroupEntity  失败=> ${error.errorMsg}  ────────────────────────────────")
+                log("|\t-─── getGroupEntity  失败=> ${error.errorMsg}  ────────────────────────────────")
                 //log("testDatastoreSearch","失败原因：${error.errorMsg}")
                 FcfrtDataHelper.getData(callBack = {
-                    log("|\t└─── getGroupEntity  离线数据=> ${GsonUtil.toJson(it)} ────────────────────────────────")
+                    log("|\t-─── getGroupEntity  离线数据=> ${GsonUtil.toJson(it)} ────────────────────────────────")
                     val byLength = it.groupBy { it.quarter?.split("-")?.get(0) }
-                    log("|\t┌─── getGroupEntity  分组数据=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
+                    log("|\t-─── getGroupEntity  分组数据=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
                     //log("testGroupEntity",GsonUtil.toJson(byLength))
                 })
 
             }).toString()
+        log("└──────────────────────────────────────────────────────────────")
+
     }
 
     private fun log(message: String) {
