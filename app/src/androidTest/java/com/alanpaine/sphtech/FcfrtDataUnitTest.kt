@@ -95,6 +95,7 @@ class FcfrtDataUnitTest {
 
 
 
+
     /**
      * 测试网络请求数据，没有网络就获取离线数据
      */
@@ -106,21 +107,23 @@ class FcfrtDataUnitTest {
             .addAll(map)
             .subscribeOnCurrent()
             .asDataParser(ModeData::class.java)
-             .doOnSubscribe { Log.e("testDatastoreSearch","开始") }
-             .doFinally { Log.e("testDatastoreSearch","结束") }
+             .doOnSubscribe {    log("┌─── testDatastoreSearch  => 开始 ────────────────────────────────") }
+             .doFinally { log("└─── testDatastoreSearch  => 结束 ────────────────────────────────") }
              .subscribe({ data ->
                  data.records?.let {
-                     Log.e("testDatastoreSearch","在线：${GsonUtil.toJson(it)}")
+                     log("┌─── testDatastoreSearch  服务器数据=> ${GsonUtil.toJson(it)} ────────────────────────────────")
                  }
              }, {//失败就获取离线数据
                  val error = ErrorInfo(it)
-                 Log.e("testDatastoreSearch","失败原因：${error.errorMsg}")
-               var data =   LitePal.findAll(RecordsData::class.java)
 
-                 Log.e("testDatastoreSearch","离线：${GsonUtil.toJson(data)}")
+                 //log("testDatastoreSearch","失败原因：${error.errorMsg}")
+                 var data =   LitePal.findAll(RecordsData::class.java)
+                 log("┌─── testDatastoreSearch  离线数据=> ${GsonUtil.toJson(data)} ────────────────────────────────")
 
              }).toString()
     }
+
+
 
     /**
      * 测试获取离线数据对数据分组
@@ -129,8 +132,17 @@ class FcfrtDataUnitTest {
     fun testGroupEntity(){
         FcfrtDataHelper.getData(callBack = {
             val byLength = it.groupBy { it.quarter?.split("-")?.get(0) }
-            Log.e("testGroupEntity",GsonUtil.toJson(byLength))
+            log("┌─── testGroupEntity  离线数据=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
+            //log("testGroupEntity",GsonUtil.toJson(byLength))
         })
     }
+
+
+
+    private fun log(message: String) {
+        println(message)
+    }
+
+
 
 }
