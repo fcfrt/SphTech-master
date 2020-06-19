@@ -18,11 +18,18 @@ import java.util.*
  * 修改简介：
  */
 class MMainImpl : FcfrtBaseModel() {
-    fun datastoreSearch(resource_id:String): Observable<ModeData> {
+    fun datastoreSearch(resource_id:String,isSubscribeOn:Boolean=false): Observable<ModeData> {
         val map = TreeMap<String, String>()
         map["resource_id"] = resource_id//资源id
-        return RxHttp.get(ApiUrl.DATASTORE_SEARCH)
-            .addAll(map)
-            .asDataParser(ModeData::class.java)
+        return if (isSubscribeOn) {
+            RxHttp.get(ApiUrl.DATASTORE_SEARCH)
+                .addAll(map)
+                .subscribeOnCurrent()
+                .asDataParser(ModeData::class.java)
+        }else{
+            RxHttp.get(ApiUrl.DATASTORE_SEARCH)
+                .addAll(map)
+                .asDataParser(ModeData::class.java)
+        }
     }
 }

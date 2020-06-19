@@ -95,38 +95,6 @@ class FcfrtDataUnitTest {
 
 
 
-
-    /**
-     * 测试网络请求数据，没有网络就获取离线数据
-     */
-    @Test
-    fun testDatastoreSearch(){
-        val map = TreeMap<String, String>()
-        map["resource_id"] = "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"//资源id
-        RxHttp.get(ApiUrl.DATASTORE_SEARCH)
-            .addAll(map)
-            .subscribeOnCurrent()
-            .asDataParser(ModeData::class.java)
-             .doOnSubscribe {    log("testDatastoreSearch","开始") }
-             .doFinally { log("testDatastoreSearch","结束") }
-             .subscribe({ data ->
-                 data.records?.let {
-                     log("testDatastoreSearch","在线：${GsonUtil.toJson(it)}")
-                     //保存并更新离线数据
-                     FcfrtDataHelper.saveRecordsListData(it)
-                 }
-             }, {//失败就获取离线数据
-                 val error = ErrorInfo(it)
-                 log("testDatastoreSearch","失败原因：${error.errorMsg}")
-                 var data =   LitePal.findAll(RecordsData::class.java)
-
-                 log("testDatastoreSearch","离线：${GsonUtil.toJson(data)}")
-
-             }).toString()
-    }
-
-
-
     /**
      * 测试获取离线数据对数据分组
      */
