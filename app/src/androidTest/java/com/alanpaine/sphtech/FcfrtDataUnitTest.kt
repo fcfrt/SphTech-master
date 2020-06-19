@@ -29,6 +29,7 @@ import java.util.*
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
+@Deprecated("该单元测试已被丢弃")
 @RunWith(AndroidJUnit4::class)
 class FcfrtDataUnitTest {
 
