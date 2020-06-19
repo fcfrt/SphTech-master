@@ -32,10 +32,13 @@ object FcfrtDataHelper {
         }
     }
 
-    fun getData(callBack:(List<RecordsData>)->Unit){
+    fun getDataAsync(callBack:(List<RecordsData>)->Unit){
         LitePal.findAllAsync(RecordsData::class.java).listen{ data->
             callBack(data)
         }
+    }
+    fun getData(callBack:(List<RecordsData>)->Unit){
+        callBack(LitePal.findAll(RecordsData::class.java))
     }
 
 

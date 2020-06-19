@@ -44,7 +44,7 @@ class PMainImpl(mContext: Context, mView: CMain.IVMain) :
                 }
             }, {
                 val error = ErrorInfo(it)
-                FcfrtDataHelper.getData(callBack = {data->
+                FcfrtDataHelper.getDataAsync(callBack = {data->
                     if (data.isNotEmpty()) {
                         mView?.onSuccess(data)
                     } else {
