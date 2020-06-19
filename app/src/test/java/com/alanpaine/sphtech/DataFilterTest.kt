@@ -48,7 +48,7 @@ class DataFilterTest {
 
         log("|\t-─── testFilterYear  模拟数据=> ${GsonUtil.toJson(mData)} ────────────────────────────────")
         val byLength = mData.groupBy { it.quarter?.split("-")?.get(0) }
-        log("|\t-─── testFilterYear  分组数据=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
+        log("|\t-─── testFilterYear  数据转换=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
         byLength.forEach {
             if (it.key?.toInt() in startAt..endAt) {
                 log("|\t┌─── after filter ${it?.key} year size:${it.value.size} ────────")
@@ -78,7 +78,7 @@ class DataFilterTest {
 
         log("|\t-─── testFilterYearGroupData  模拟数据=> ${GsonUtil.toJson(mData)} ────────────────────────────────")
         val byLength = mData.groupBy { it.quarter?.split("-")?.get(0) }
-        log("|\t-─── testFilterYearGroupData  分组数据=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
+        log("|\t-─── testFilterYearGroupData  数据转换=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
         byLength.forEach {
             var yearVolume = 0F
             if (it.key?.toInt() in startAt..endAt) {

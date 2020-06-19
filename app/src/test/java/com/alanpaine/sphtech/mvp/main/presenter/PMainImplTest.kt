@@ -1,18 +1,14 @@
 package com.alanpaine.sphtech.mvp.main.presenter
-import com.alanpaine.sphtech.bean.section.ItemNode
-import com.alanpaine.sphtech.bean.section.RootNode
 import com.alanpaine.sphtech.help.FcfrtDataHelper
 import com.alanpaine.sphtech.help.http.ErrorInfo
 import com.alanpaine.sphtech.mvp.main.contract.CMain
 import com.alanpaine.sphtech.mvp.main.model.MMainImpl
-import com.chad.library.adapter.base.entity.node.BaseNode
 import io.mockk.MockKAnnotations
 import io.mockk.impl.annotations.MockK
 import io.mockk.spyk
 import org.junit.Before
 import org.junit.Test
 import rxhttp.wrapper.utils.GsonUtil
-import java.util.ArrayList
 
 class PMainImplTest {
     @MockK
@@ -72,7 +68,7 @@ class PMainImplTest {
                 data.records?.let {
                     log("|\t-─── getGroupEntity  服务器数据=> ${GsonUtil.toJson(it)} ────────────────────────────────")
                     val byLength = it.groupBy { it.quarter?.split("-")?.get(0) }
-                    log("|\t-─── getGroupEntity  分组数据=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
+                    log("|\t-─── getGroupEntity  数据转换=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
                     byLength.forEach {
                         var yearVolume = 0F
                         if (it.key?.toInt() in 2008..2018) {
@@ -93,7 +89,7 @@ class PMainImplTest {
                 FcfrtDataHelper.getData(callBack = {
                     log("|\t-─── getGroupEntity  离线数据=> ${GsonUtil.toJson(it)} ────────────────────────────────")
                     val byLength = it.groupBy { it.quarter?.split("-")?.get(0) }
-                    log("|\t-─── getGroupEntity  分组数据=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
+                    log("|\t-─── getGroupEntity  数据转换=> ${GsonUtil.toJson(byLength)} ────────────────────────────────")
                     //log("testGroupEntity",GsonUtil.toJson(byLength))
                 })
 
